@@ -3,7 +3,7 @@
     <HeroSection
       title="Aktivitas & Pertunjukan"
       subtitle="Saksikan aksi spektakuler dan ikuti pengalaman edukatif yang tak terlupakan"
-      backgroundImage="/src/assets/aktivitas.jpg"
+      :backgroundImage="aktivitasImg"
     />
 
     <section class="bg-slate-900 mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -13,7 +13,7 @@
         <div class="grid md:grid-cols-2">
           <div class="relative h-64 md:h-auto">
             <img
-              src="/src/assets/feeding_show.jpeg"
+              :src="feedingShowImg"
               alt="Feeding Show"
               class="absolute inset-0 w-full h-full object-cover"
             />
@@ -116,6 +116,8 @@
 <script setup>
 import { ref } from 'vue'
 import HeroSection from '../components/HeroSection.vue'
+import aktivitasImg from '../assets/aktivitas.jpg'
+import feedingShowImg from '../assets/feeding_show.jpeg'
 
 const activities = ref([
   {

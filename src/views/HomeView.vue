@@ -28,7 +28,7 @@
         </div>
         <div class="relative">
           <img
-            src="/src/assets/terowongan.jpg"
+            :src="terowonganImg"
             alt="Shark Aquarium"
             class="rounded-2xl shadow-xl w-full object-cover h-80"
           />
@@ -84,4 +84,5 @@
 <script setup>
 import HeroSection from '../components/HeroSection.vue'
 import FeatureCard from '../components/FeatureCard.vue'
+import terowonganImg from '../assets/terowongan.jpg'
 </script>
